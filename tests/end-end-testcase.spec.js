@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-test('SauceDemo Complete Order Flow', async ({ page }) => {
+test ('test case 1 ', async ({ page }) => {
 
 // Navigate to application
 await page.goto('https://www.saucedemo.com/');

@@ -27,9 +27,7 @@ module.exports = defineConfig({
   use: {
     baseURL: 'https://www.saucedemo.com',
 
-    browserName: 'chromium',
-
-    headless: false,
+    headless: true,
 
     screenshot: 'only-on-failure',
 
@@ -46,21 +44,18 @@ module.exports = defineConfig({
     {
       name: 'Chrome',
       use: {
-        ...devices['Desktop Chrome']
-      }
-    },
-
-    {
-      name: 'Firefox',
-      use: {
-        ...devices['Desktop Firefox']
+        ...devices['Desktop Chrome'],
+        channel: 'chrome',
+        headless: true
       }
     },
 
     {
       name: 'Edge',
       use: {
-        ...devices['Desktop Edge']
+        ...devices['Desktop Edge'],
+        channel: 'msedge',
+        headless: true
       }
     }
   ]
