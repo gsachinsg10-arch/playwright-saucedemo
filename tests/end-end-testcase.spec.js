@@ -41,4 +41,4 @@ page.locator('[data-test="complete-header"]')
 ).toHaveText('Thank you for your order!');
 // Verify Order Completion URL
 await expect(page).toHaveURL(/checkout-complete/);
-});goi
+});
