@@ -18,7 +18,6 @@ module.exports = defineConfig({
   retries: process.env.CI ? 2 : 0,
 
   workers: process.env.CI ? 1 : undefined,
-
   reporter: [
     ['html'],
     ['list']
